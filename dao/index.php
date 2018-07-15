@@ -29,9 +29,17 @@
 	$usuario->login("user", "123456");
 	echo $usuario;
 	*/
-	//Inserção
+	/*Inserção
 	$usuario = new Usuario("aluno", "123456");
 	$usuario->insert();
 
+	echo $usuario;
+	*/
+
+	//Update
+
+	$usuario = new Usuario();
+	$usuario->loadById(8);
+	$usuario->update("Professor","qwerty");
 	echo $usuario;
  ?>
