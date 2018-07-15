@@ -36,10 +36,15 @@
 	echo $usuario;
 	*/
 
-	//Update
-
+	/*Update
 	$usuario = new Usuario();
 	$usuario->loadById(8);
 	$usuario->update("Professor","qwerty");
+	echo $usuario;
+	*/
+	//Delete
+	$usuario = new Usuario();
+	$usuario->loadById(7);
+	$usuario->delete();
 	echo $usuario;
  ?>
